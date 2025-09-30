@@ -13,6 +13,7 @@
       font-family: 'Courier New', monospace;
       color: red;
     }
+
     .screen {
       position: fixed;
       inset: 0;
@@ -40,11 +41,11 @@
       text-shadow: 0 0 8px red;
     }
 
-    /* Doors */
+    /* Doors screen */
     .doors-bg {
       position: fixed;
       inset: 0;
-      background-image: url('doors.jpg'); /* replace with your image */
+      background-image: url('doors.jpeg'); /* replace with your image */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -133,7 +134,7 @@
       <input id="pw" class="gate-input" type="text" placeholder="Enter the word" autocomplete="off" />
       <button class="gate-button" onclick="check()">Submit</button>
     </div>
-    <div class="corner-hint">777</div>
+    <div class="corner-hint">hell</div>
   </section>
 
   <!-- Wrong answer -->
@@ -173,7 +174,6 @@
       }
     }
 
-    // Allow Enter key
     document.addEventListener('keydown', e => {
       if (document.getElementById('gate').classList.contains('active') && e.key === 'Enter') {
         check();
@@ -182,3 +182,4 @@
   </script>
 </body>
 </html>
+
